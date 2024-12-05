@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: obudai
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPB1jFl4p6FTBixHT6wOk6X8nj/Z7eoPNQE/M0wK485K ondrej@budai.cz
+    passwd: $6$rounds=4096$aJSFdUsJ3xzFlMmA$Sc1kk51AZT47laBFcmwusS1dcSioL7.ej7mNOEXTm4oOGwgKP6Rf9tkbX9WRTkpmQAEDvxvE2RRLg46zY4xMe0 #foobar
+    lock_passwd: false
+    sudo: ALL=(ALL) NOPASSWD:ALL
